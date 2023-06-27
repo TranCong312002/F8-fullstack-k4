@@ -1,0 +1,22 @@
+header {
+  text-align: center;
+  color: aliceblue;
+  background-color: rgba(100, 148, 237, 0.655);
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+}
+section {
+  text-align: center;
+}
+.setspan {
+  color: dodgerblue;
+  font-size: 30px;
+}
+.setbutton {
+  background-color: rgb(62, 59, 59);
+  color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0px;
+}

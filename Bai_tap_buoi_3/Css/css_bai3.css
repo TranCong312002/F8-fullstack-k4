@@ -1,0 +1,10 @@
+.setheight,
+.setheight input {
+  height: 20px;
+}
+.setinput input {
+  min-width: 50%;
+}
+.output {
+  text-align: center;
+}

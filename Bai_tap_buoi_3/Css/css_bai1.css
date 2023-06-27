@@ -1,0 +1,27 @@
+html {
+  margin: 20px;
+}
+.sethr {
+  width: 100px;
+  height: 2px;
+  border: 0px;
+  margin-left: 0;
+  background-color: orange;
+}
+.setimg {
+  display: inline;
+  width: 30px;
+  padding-right: 10px;
+}
+.setinput {
+  min-width: 100%;
+  min-height: 30px;
+}
+.setcontact {
+  padding-bottom: 100%;
+}
+.setbutton {
+  padding: 10px 20px;
+  background-color: chartreuse;
+  border: 0px;
+}

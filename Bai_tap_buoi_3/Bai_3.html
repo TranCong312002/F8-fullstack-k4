@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form access Manager</title>
+    <link rel="stylesheet" href="Css/css_bai3.css" />
+  </head>
+  <body>
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="get"
+    >
+      <table width="50%" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td><label for="username">Username:</label></td>
+          <td class="setinput setheight">
+            <input type="text" name="username" id="username" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td class="setinput setheight">
+            <input type="password" name="password" id="password" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="city">City of Employment:</label></td>
+          <td class="setinput setheight">
+            <input type="text" name="city" id="city" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="wep">Wep server:</label></td>
+          <td>
+            <select class="setheight" name="wep" id="wep">
+              <option value="">-Choose a server-</option>
+              <option value="1">Việt Nam</option>
+              <option value="2">China</option>
+              <option value="3">Japan</option>
+              <option value="3">Bắc Mĩ</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Please specify your role:</label></td>
+          <td>
+            <div>
+              <label><input type="radio" name="role" value="1" />Admin</label>
+            </div>
+            <div>
+              <label
+                ><input type="radio" name="role" value="2" />Engineer</label
+              >
+            </div>
+            <div>
+              <label><input type="radio" name="role" value="3" />Manager</label>
+            </div>
+            <div>
+              <label><input type="radio" name="role" value="4" />Guest</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Single Sign-on to the following:</label></td>
+          <td>
+            <div>
+              <label><input type="checkbox" name="Sign" value="1" />Mail</label>
+            </div>
+            <div>
+              <label
+                ><input type="checkbox" name="Sign" value="2" />Payroll</label
+              >
+            </div>
+            <div>
+              <label
+                ><input
+                  type="checkbox"
+                  name="Sign"
+                  value="3"
+                />Self-service</label
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="output" colspan="2">
+            <button>login</button> <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

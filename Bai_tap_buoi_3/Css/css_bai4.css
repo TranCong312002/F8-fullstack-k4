@@ -1,0 +1,23 @@
+.setiframe {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.settable {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: azure;
+}
+.settopspace {
+  padding-left: 0;
+}
+.setcolor {
+  background-color: blanchedalmond;
+}
+.setborder {
+  border: 1px solid blanchedalmond;
+}
+.topspace {
+  height: 30px;
+}
