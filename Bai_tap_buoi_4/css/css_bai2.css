@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Alfa Slab One";
+  src: url("Buoi_1/Bai_tap_buoi_4/font_family/AlfaSlabOne-Regular.ttf")
+    format("truetype");
+  font-family: "BebasNeue";
+  src: url("Buoi_1/Bai_tap_buoi_4/font_family/BebasNeue-Regular.ttf")
+    format("truetype");
+}
+h1 {
+  font-family: "Alfa Slab One", sans-serif;
+  letter-spacing: -5px;
+  font-size: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "BebasNeue", sans-serif;
+  margin-bottom: 10px;
+}
+
+.setform {
+  text-align: center;
+}
+input {
+  width: 350px;
+  height: 30px;
+}
+button {
+  width: 357px;
+  height: 35px;
+  border: 0px;
+  font-family: "Alfa Slab One", sans-serif;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(207, 13, 13);
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}

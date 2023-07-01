@@ -1,0 +1,32 @@
+.setform {
+  background-color: rgb(99, 99, 152);
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.setform h1 span {
+  color: rgb(255, 187, 0);
+}
+.setform form h1 {
+  margin: 10px;
+}
+.setbotton {
+  padding: 4px 6px;
+  width: 20%;
+  border: 0px;
+  background-color: rgb(255, 200, 0);
+}
+.setinput {
+  padding: 4px 6px;
+  width: 25%;
+}
+.setform:hover .setinput::placeholder {
+  color: rgb(255, 187, 0);
+}
+.setform:hover .setinput {
+  background-color: #ddd;
+}
+.setform:hover .setbotton {
+  background-color: rgb(255, 187, 0);
+  color: #fff;
+}
