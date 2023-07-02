@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Alfa Slab One";
-  src: url("Buoi_1/Bai_tap_buoi_4/font_family/AlfaSlabOne-Regular.ttf")
-    format("truetype");
-  font-family: "BebasNeue";
-  src: url("Buoi_1/Bai_tap_buoi_4/font_family/BebasNeue-Regular.ttf")
-    format("truetype");
+  font-family: Alfa Slab One;
+  src: url("../font_family/AlfaSlabOne-Regular.ttf");
+}
+@font-face {
+  font-family: BebasNeue;
+  src: url("../font_family/BebasNeue-Regular.ttf");
 }
 h1 {
-  font-family: "Alfa Slab One", sans-serif;
-  letter-spacing: -5px;
+  font-family: Alfa Slab One, sans-serif;
+
   font-size: 70px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 h2 {
-  font-family: "BebasNeue", sans-serif;
+  font-family: BebasNeue, sans-serif;
   margin-bottom: 10px;
 }
 
@@ -29,7 +29,7 @@ button {
   width: 357px;
   height: 35px;
   border: 0px;
-  font-family: "Alfa Slab One", sans-serif;
+  font-family: Alfa Slab One, sans-serif;
   border-radius: 4px;
   color: #fff;
   background-color: rgb(207, 13, 13);
