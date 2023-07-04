@@ -7,6 +7,7 @@ body {
   padding: 20px 30px;
   --width: 30px;
   --color: rgba(0, 0, 0, 0.342);
+  width: 100%;
 }
 h1 {
   font-family: Lobster, sans-serif;
@@ -17,7 +18,7 @@ p {
 .change__color {
   color: rgba(255, 0, 0, 0.845);
 }
-input,
+.child__input,
 textarea,
 .setselect {
   width: 100%;
@@ -55,4 +56,24 @@ textarea,
   width: 100px;
   height: 60px;
   background-color: black;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.check__input {
+  margin-left: 0;
+}
+.button {
+  height: 20px;
+  position: absolute;
+  right: -20px;
+  width: 100px;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+  border: 0;
 }
