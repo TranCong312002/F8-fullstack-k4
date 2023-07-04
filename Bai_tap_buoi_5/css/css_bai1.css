@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato, sans-serif;
+  padding: 20px 30px;
+  --width: 30px;
+  --color: rgba(0, 0, 0, 0.342);
+}
+h1 {
+  font-family: Lobster, sans-serif;
+}
+p {
+  color: var(--color);
+}
+.change__color {
+  color: rgba(255, 0, 0, 0.845);
+}
+input,
+textarea,
+.setselect {
+  width: 100%;
+  height: var(--width);
+  margin-left: var(--width);
+  border-radius: 0px;
+  border: 1px solid var(--color);
+}
+.textarea {
+  height: 100%;
+  display: block;
+}
+.input {
+  position: relative;
+  margin: 10px;
+  margin-left: 0;
+  /* width: 100%; */
+}
+.icons {
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  width: var(--width);
+  height: 100%;
+  background-color: var(--color);
+}
+.fa-solid {
+  margin-left: 50%;
+  margin-top: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.input::before {
+  content: "";
+  width: 100px;
+  height: 60px;
+  background-color: black;
+}

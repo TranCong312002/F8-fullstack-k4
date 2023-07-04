@@ -1,0 +1,32 @@
+.first {
+  background-color: orange;
+  padding: 3px;
+  margin: 5px 0;
+  color: #fff;
+  font-size: 14px;
+}
+input {
+  display: none;
+}
+.iconplus {
+  display: none;
+}
+.content {
+  display: none;
+}
+input:nth-of-type(1):checked ~ .content,
+input:nth-of-type(1):checked ~ .first .iconplus,
+input:nth-of-type(2):checked ~ .content,
+input:nth-of-type(2):checked ~ .first .iconplus,
+input:nth-of-type(3):checked ~ .content,
+input:nth-of-type(3):checked ~ .first .iconplus {
+  display: inline-block;
+}
+input:nth-of-type(1):checked ~ .first .iconminus,
+input:nth-of-type(2):checked ~ .first .iconminus,
+input:nth-of-type(3):checked ~ .first .iconminus {
+  display: none;
+}
+.main__content {
+  padding: 10px 0;
+}
