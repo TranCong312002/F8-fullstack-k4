@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   font-family: Lato, sans-serif;
@@ -21,7 +23,7 @@ p {
 .child__input,
 textarea,
 .setselect {
-  width: 100%;
+  width: calc(100% - var(--width));
   height: var(--width);
   margin-left: var(--width);
   border-radius: 0px;
@@ -63,14 +65,15 @@ textarea,
   text-align: center;
   width: 100%;
   position: relative;
+  padding-right: 10px;
 }
 .check__input {
   margin-left: 0;
 }
 .button {
   height: 20px;
-  position: absolute;
-  right: -20px;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 100px;
   height: 30px;
   background-color: red;
