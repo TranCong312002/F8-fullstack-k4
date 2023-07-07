@@ -57,6 +57,7 @@ img {
   background-color: #fff;
   color: #ff574d;
   border-radius: 3px;
+  cursor: pointer;
 }
 #Left-form .footer_left {
   display: flex;
@@ -70,6 +71,7 @@ img {
   height: 20px;
   padding: 3px;
   margin: 5px;
+  cursor: pointer;
   background-color: #0000001d;
 }
 #right-form {
@@ -89,6 +91,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#right-form .between-circle {
+  cursor: pointer;
 }
 #right-form .between-circle .icon {
   color: #ff574d;
@@ -121,6 +126,7 @@ hr {
   min-height: 30px;
   padding: 0 10px;
   margin: 10px 0 10px 0;
+  cursor: pointer;
 }
 .mid-content {
   display: flex;
@@ -132,6 +138,9 @@ hr {
   min-width: 15px;
   min-height: 15px;
   margin-right: 5px;
+}
+.mid-content #check {
+  cursor: pointer;
 }
 /* .mid-content .check + label {
   display: flex;
@@ -152,6 +161,7 @@ hr {
   background-color: #ff574d;
   color: #fff;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .footer_right a {
   text-decoration: none;

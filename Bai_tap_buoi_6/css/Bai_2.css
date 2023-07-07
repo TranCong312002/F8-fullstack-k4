@@ -55,34 +55,40 @@ body {
 }
 .layout .nav__layout.nav__layout__1:hover {
   border: 2px solid chartreuse;
+  cursor: pointer;
 }
 .icons.icon_2 {
   background-color: rgb(169, 95, 238);
 }
 .layout .nav__layout.nav__layout__2:hover {
+  cursor: pointer;
   border: 2px solid rgb(169, 95, 238);
 }
 .icons.icon_3 {
   background-color: rgb(171, 30, 65);
 }
 .layout .nav__layout.nav__layout__3:hover {
+  cursor: pointer;
   border: 2px solid rgb(171, 30, 65);
 }
 .icons.icon_4 {
   background-color: rgba(107, 107, 234, 0.566);
 }
 .layout .nav__layout.nav__layout__4:hover {
+  cursor: pointer;
   border: 2px solid rgba(107, 107, 234, 0.566);
 }
 .icons.icon_5 {
   background-color: rgb(0, 174, 255);
 }
 .layout .nav__layout.nav__layout__5:hover {
+  cursor: pointer;
   border: 2px solid rgb(0, 174, 255);
 }
 .icons.icon_6 {
   background-color: rgb(223, 175, 17);
 }
 .layout .nav__layout.nav__layout__6:hover {
+  cursor: pointer;
   border: 2px solid rgb(223, 175, 17);
 }

@@ -49,6 +49,7 @@ td .box {
 .header td:hover .box {
   background-color: #2da5da;
   color: aliceblue;
+  cursor: pointer;
 }
 .header .new:hover .sub {
   background-color: aliceblue;
