@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 700px;
+  height: 400px;
+  border: 0px;
+  border-spacing: 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#Left-form {
+  width: 40%;
+  height: 100%;
+  background-color: #ff574d;
+  text-align: center;
+  padding: 15px;
+}
+#Left-form .header_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 35px;
+  border-radius: 3px;
+}
+#Left-form .header_left .img {
+  display: inline-block;
+  padding: 10px;
+}
+
+#Left-form .header_left h1 {
+  display: inline-block;
+}
+#Left-form .content_left button {
+  padding: 5px 20px;
+  margin: 20px 0;
+  border: 0px;
+  background-color: #fff;
+  color: #ff574d;
+  border-radius: 3px;
+}
+#Left-form .footer_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Left-form .footer_left .fa-brands {
+  font-weight: 400;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  margin: 5px;
+  background-color: #0000001d;
+}
+#right-form {
+  padding: 15px 50px;
+  position: relative;
+}
+#right-form .between-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #00000054;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#right-form .between-circle .icon {
+  color: #ff574d;
+}
+#right-form .right-form {
+  text-align: center;
+  height: 100%;
+}
+.right-form .header_right {
+  padding: 20px 0 10px 0;
+}
+.right-form .header_right h1 {
+  font-size: 25px;
+}
+.right-form .header_right h1 span {
+  color: #ff574d;
+}
+hr {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid #ff574d;
+}
+.top-content .account {
+  display: block;
+}
+.top-content #account,
+.top-content #password {
+  width: calc(100% - 20px);
+  min-height: 30px;
+  padding: 0 10px;
+  margin: 10px 0 10px 0;
+}
+.mid-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+.mid-content #check {
+  min-width: 15px;
+  min-height: 15px;
+  margin-right: 5px;
+}
+/* .mid-content .check + label {
+  display: flex;
+  align-items: center;
+} */
+.mid-content .check .check_label {
+  display: flex;
+  align-items: center;
+}
+.mid-content .forgot-password a {
+  text-decoration: none;
+  color: #000;
+}
+.last-content button {
+  width: 100%;
+  min-height: 30px;
+  border: 0px;
+  background-color: #ff574d;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer_right a {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #ebf5fe;
+  color: #666666;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 100px;
+  margin-left: -20px;
+}
+.nav__layout {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 25%;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 10px rgba(142, 136, 136, 0.279);
+  border: 2px solid transparent;
+}
+
+.nav__layout .header__nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.nav__layout .content__nav p {
+  font-size: 13px;
+}
+.nav__layout .footer__nav a {
+  font-size: 13px;
+  font-weight: 800;
+  color: blue;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0px;
+  width: 14px;
+  height: 14px;
+  padding: 10px;
+  border-radius: 100rem;
+  color: #fff;
+  margin: 5px 5px 5px 0px;
+}
+.icons.icon_1 {
+  background-color: chartreuse;
+}
+.layout .nav__layout.nav__layout__1:hover {
+  border: 2px solid chartreuse;
+}
+.icons.icon_2 {
+  background-color: rgb(169, 95, 238);
+}
+.layout .nav__layout.nav__layout__2:hover {
+  border: 2px solid rgb(169, 95, 238);
+}
+.icons.icon_3 {
+  background-color: rgb(171, 30, 65);
+}
+.layout .nav__layout.nav__layout__3:hover {
+  border: 2px solid rgb(171, 30, 65);
+}
+.icons.icon_4 {
+  background-color: rgba(107, 107, 234, 0.566);
+}
+.layout .nav__layout.nav__layout__4:hover {
+  border: 2px solid rgba(107, 107, 234, 0.566);
+}
+.icons.icon_5 {
+  background-color: rgb(0, 174, 255);
+}
+.layout .nav__layout.nav__layout__5:hover {
+  border: 2px solid rgb(0, 174, 255);
+}
+.icons.icon_6 {
+  background-color: rgb(223, 175, 17);
+}
+.layout .nav__layout.nav__layout__6:hover {
+  border: 2px solid rgb(223, 175, 17);
+}
