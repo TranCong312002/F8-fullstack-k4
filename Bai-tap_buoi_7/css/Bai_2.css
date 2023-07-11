@@ -46,9 +46,13 @@ body {
   font-weight: 900;
   font-size: 16px;
 }
+/* .profile .header .img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.166);
+} */
 .profile .header .img img {
   width: 130px;
   display: block;
+  border-radius: 3px 3px 0 0;
 }
 .profile .taskbar {
   width: 100%;
