@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap");
+@font-face {
+  font-family: "SFU";
+  src: url(../font/00208-SFUBaskervilleBookMedium.TTF);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+.banner {
+  background-image: url("https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sub_banner {
+  width: 42%;
+  height: 230px;
+  position: absolute;
+  color: #3f3424;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 50%;
+  right: 50%;
+  padding: 20px;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+.sub_banner::after {
+  content: "3,2 TỶ/CĂN";
+  font-family: "SFU", sans-serif;
+  text-align: center;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 46px;
+  padding: 0px 20px;
+  background-color: rgba(255, 0, 0, 0.7);
+  position: absolute;
+  margin-right: 20px;
+  bottom: -23px;
+  color: white;
+  border-radius: 3px;
+  right: 0;
+}
+.sub_banner h1 {
+  color: #bf4240;
+  padding: 10px 0 20px 0;
+}
+.sub_banner p {
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.sub_banner .location {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.sub_banner .location ion-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.sub_banner .location p {
+  display: inline-block;
+  margin: auto 0;
+  font-weight: 900;
+}

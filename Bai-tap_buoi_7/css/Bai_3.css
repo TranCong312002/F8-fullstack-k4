@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#main {
+  font-family: "Asap", sans-serif;
+  padding: 0 100px;
+}
+#main .header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 20px 0;
+}
+#main .header h2 {
+  display: inline-block;
+  min-width: 20%;
+}
+#main .header hr {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 0px;
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+}
+#main .tab {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#main .tab .City {
+  background-color: #ccc;
+  margin-right: 25px;
+  border-radius: 99px;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+#main .tab .City .name {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+#main .tab .City .number_BDS {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+}
+input {
+  display: none;
+}
+#main .tab input:nth-of-type(1):checked + label .City,
+#main .tab input:nth-of-type(2):checked + label .City,
+#main .tab input:nth-of-type(3):checked + label .City,
+#main .tab input:nth-of-type(4):checked + label .City,
+#main .tab input:nth-of-type(5):checked + label .City,
+#main .tab input:nth-of-type(6):checked + label .City,
+#main .tab input:nth-of-type(7):checked + label .City,
+#main .tab input:nth-of-type(8):checked + label .City {
+  background-color: rgb(242, 136, 29);
+  color: #fff;
+}
+#main .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+#main .content .infomation {
+  width: 32%;
+  height: 300px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#main .content .quan_2 {
+  background-image: url("../img/dac-diem-dia-ly-quan-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#main .content .quan_7 {
+  background-image: url("../img/quan-7-thanh-pho-ho-chi-minh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .content .quan_9 {
+  background-image: url("../img/Quan_9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .content .quan_tan_binh {
+  background-image: url("../img/Quan_tan_binh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .content .thu_duc {
+  background-image: url("../img/thanh-pho-thu-duc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main .content .binh_chanh {
+  background-image: url("../img/huyen-binh-chanh.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .content .infomation .name {
+  position: absolute;
+  top: 25px;
+  left: 23px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+#main .content .infomation .number_BDS {
+  position: absolute;
+  bottom: 25px;
+  left: 23px;
+  color: #fff;
+}
+#main .content .infomation .number_BDS p {
+  display: inline-block;
+}
+#main .content .infomation .number_BDS span {
+  font-weight: 700;
+}
