@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-image: url("https://i.pinimg.com/564x/28/f8/c9/28f8c97db58f45c8bd55be9c33c0cc3b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 60px;
+}
+a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #000;
+}
+#main .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+#main .header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .header .title_header {
+  font-weight: 900;
+}
+#main .header .content_header {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+#main .header .content_header ion-icon {
+  margin-left: 5px;
+}
+.last_icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.last_icon .icon {
+  margin: 0;
+  margin: 0 10px;
+}
+#main .header .content_header p {
+  display: inline-block;
+}
+#main .header .content_header.doc {
+  cursor: pointer;
+}
+#main .header .content:hover .nav_content_header {
+  display: flex;
+}
+#main .header .content_header .nav_content_header {
+  position: absolute;
+  height: auto;
+  display: flex;
+  background-color: #fff;
+  top: 100%;
+  right: 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(107, 106, 106, 0.388);
+  display: none;
+}
+#main .header .content_header .nav_content_header::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 20px;
+  transform: translateY(-100%);
+}
+.nav_content_header .left_nav {
+  width: 60%;
+}
+.nav_content_header .left_nav,
+.nav_content_header .right_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right_nav .elements {
+  border-left: 1px solid #cccccc53;
+  padding-left: 50px;
+}
+.left_nav .usage,
+.left_nav .styleguide,
+.right_nav .elements {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.left_nav .usage .title_usage,
+.left_nav .styleguide .title_styleguide,
+.right_nav .elements .title_element {
+  margin-bottom: 15px;
+}
+.left_nav .usage .list_usage,
+.left_nav .styleguide .list_styleguide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.left_nav .usage .list_usage a,
+.left_nav .styleguide .list_styleguide a,
+.right_nav .elements .list_elements a {
+  width: 50%;
+  margin-bottom: 15px;
+}
+.right_nav .elements .list_elements a {
+  width: 33%;
+}
