@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px 200px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header h1 {
+  margin-bottom: 20px;
+}
+.header p {
+  margin-bottom: 40px;
+}
+.table {
+  width: 100%;
+}
+.table input,
+.table textarea {
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.table .input {
+  position: relative;
+}
+.table .input input:not(:placeholder-shown) + label,
+.table .input input:focus + label {
+  top: 25%;
+  font-size: 12px;
+  transition-property: top font-size;
+  transition: 0.5s ease;
+}
+label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #ccc;
+}
+.table tr td {
+  padding: 20px 10px;
+}
+.table tr td select {
+  width: calc(100% - 11px);
+  padding: 15px 5px;
+  box-sizing: content-box;
+  color: #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form .button button {
+  padding: 15px 25px;
+  border-radius: 99px;
+  font-size: 16px;
+  border: 0px;
+  background-color: rgb(60, 60, 229);
+  color: #fff;
+}
+/* .table select, */
+.input .textarea {
+  position: absolute;
+  top: 20px;
+}
+.table .input textarea:not(:placeholder-shown) + label,
+.input textarea:focus + .textarea {
+  font-size: 12px;
+  top: 13px;
+  transition-property: top font-size;
+  transition: 0.5s ease;
+}
