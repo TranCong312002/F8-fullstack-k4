@@ -33,9 +33,11 @@ body {
   background-image: url("https://i.pinimg.com/564x/8a/5b/92/8a5b92ec9fb66c2617d65eaa2eff82c5.jpg");
   background-size: cover;
   background-color: rgb(246, 146, 6);
+  cursor: pointer;
   background-blend-mode: soft-light;
 }
 .main .box:hover .more {
+  cursor: pointer;
   margin-top: 50px;
   transform: translateY(0px);
   transition-property: transform, margin-top;
@@ -44,7 +46,7 @@ body {
 .main .box:hover .icon {
   transform: translateY(-100px);
   margin-bottom: calc(15px - 50px);
-
+  cursor: pointer;
   transition-property: transform, font-size, margin-bottom;
   transition: 1s ease;
 }
@@ -76,5 +78,6 @@ body {
 }
 .more:hover .icon_more {
   color: #fff;
+  cursor: pointer;
   transition: color 1s ease;
 }

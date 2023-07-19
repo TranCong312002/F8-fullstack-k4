@@ -74,6 +74,7 @@ p {
   justify-content: flex-end;
   background-color: coral;
   color: #ddd;
+  cursor: pointer;
   transition: background-color 1s ease;
 }
 .timeline .year {
