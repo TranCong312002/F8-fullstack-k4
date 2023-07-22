@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+input {
+  display: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px;
+}
+.title,
+.content {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
+.list_title ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  list-style-type: none;
+}
+.list_title ul li {
+  border: 1px solid #ddd;
+  font-size: 14px;
+  padding: 3px;
+  flex: 1;
+  text-align: center;
+}
+.list_title ul li p {
+  padding: 10px 5px;
+  flex: 1;
+}
+input:nth-of-type(1):checked + label p {
+  background-color: rgb(66, 151, 220);
+  color: #fff;
+}
+.content {
+  border: 1px solid #ddd;
+  overflow-x: scroll;
+  padding: 20px;
+  line-height: 1.5;
+}
+.content .content_child {
+  width: 750px;
+}
+.content .content_child {
+  display: none;
+}
+input:checked + label .content_child {
+  display: block;
+}
+.content_child {
+  position: absolute;
+  border: 1px solid #ddd;
+  overflow-x: scroll;
+  line-height: 1.5;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 700px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: start;
+  color: transparent;
+  transition-property: color, transform, visibility;
+  transition: 0.5s ease;
+  visibility: hidden;
+}
+.list_title ul li .content_child p {
+  padding: 10px 0px;
+}
+input:nth-of-type(1):checked ~ .content_child {
+  color: #000;
+  transform: skewX(180deg);
+  transform-origin: top;
+  visibility: inherit;
+}
