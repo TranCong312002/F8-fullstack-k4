@@ -1,0 +1,48 @@
+@mixin column($name:""){
+    $prefix:"col";
+    @if($name!=""){
+        $prefix: $prefix + "-" + $name;
+    }
+    @for $i from 1 through 12{
+        .#{$prefix}-#{$i}{
+            --column-size:#{$i};
+        }
+    }
+}
+@mixin basic{
+    @media screen and (max-width:1365px) {
+        $prefix:"col";
+        @for $i from 1 through 12{
+            .#{$prefix}-#{$i}{
+                --column-size:#{$i};
+            }
+        }
+    }
+
+}
+
+@mixin input{
+    width: calc(100% - (calc($paddingInput * 2)));
+    border-radius: 12px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 54px;
+    padding: 0 $paddingInput;
+    background-color: #fff;
+    border: 1px solid #dedeea;
+    color: #3e3f5e;
+}
+@mixin formforgot{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $textColorForm;
+}
+
+@mixin hoverLinksocial{
+    color: #fff;
+    transition: margin-top 0.5s;
+    &:hover{
+        margin-top:-5px ;
+    }
+}

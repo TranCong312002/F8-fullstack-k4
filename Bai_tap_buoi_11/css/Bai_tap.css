@@ -808,4 +808,12 @@ header {
   .header_content .header_content_txt .header_content_para {
     text-align: left;
   }
+  .featrue_content .featrue_content_txt,
+  .featrue2_content .featrue2_content_txt {
+    text-align: left;
+  }
+  .featrue_content .featrue_content_btn,
+  .featrue2_content .featrue2_content_btn {
+    margin: 50px auto 20px 0;
+  }
 }
