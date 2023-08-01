@@ -1,0 +1,272 @@
+.greenchop-introduce{
+    margin-bottom: 70px;
+    // margin-top: 1px;
+    
+}
+.greenchop-introduce-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    h3{
+        font-size: 3.66rem;
+        font-weight: 800;
+        line-height: 131%;
+        color: $textColor;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 4.33rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .greenchop-introduce-title-content{
+        color: $textColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        width: 85%;
+    }
+}
+.greenchop-introduce-image{
+    width: 50vw;
+    height: auto;
+    border-radius: 16.667px 0px 0px 16.667px;
+    background: $colorBackground;
+    position: relative;
+    .img-chop{
+        width: 100%;
+        margin-left:-21%;
+        height: auto;
+    }
+    .greenchop-introduce-image-title{
+        p{
+            font-size: 16.6rem;
+            width: 100%;
+            font-weight: 800;
+            line-height: 100%;
+            position: absolute;
+            transform-origin: top left;
+            transform: rotateZ(90deg);
+            top: 5%;
+            left: 100%;
+            color: #216000;
+            opacity: 0.150000006;
+        }
+    }
+}
+.greenchop-protect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding-bottom: 200px;
+    .greenchop-protect-title{
+        color: $textColor;
+        text-align: center;
+        font-size: 3.16rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 4.16rem;
+        width: 50%;
+    }
+    .greenchop-protect-content{
+        margin-top: 25px;
+        color: $textColor;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        width: 55%;
+    }
+    .greenchop-achievement{
+        margin-top: 25px;
+        .row{
+            gap: 22px;
+            align-items: baseline;
+            justify-content: center;
+            .col-3{
+                
+                &:nth-of-type(1){
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 235px;
+                        height: 235px;
+                        position: absolute;
+                        background-color: $colorLightGreen;
+                        top: 0;
+                        left: -40%;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+                }
+                &:nth-of-type(2){
+                    .greenchop-achievement-child{
+                        padding: 6.1rem 3.3rem 8.2rem 3.3rem;
+                        margin: 0 -25px;
+                        .greenchop-achievement-child-icon{
+                            background-color: #f3ffec;
+                        }
+                    }
+                }
+                &:nth-of-type(3){
+                    position: relative;
+                    &::after{
+                        content: "";
+                        width: 235px;
+                        height: 235px;
+                        position: absolute;
+                        background-color: $colorLightPink;
+                        bottom: -28%;
+                        right: -40%;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+                }
+            }
+            .greenchop-achievement-child{
+                border-radius: 0.33rem;
+                background: #fff;
+                margin-top: 11.5rem;
+                box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px rgba(54, 54, 54, 0.12);
+                padding: 3.3rem 3.3rem 5.9rem 3.3rem;
+                .greenchop-achievement-child-icon{
+                    padding: 1.9rem;
+                    display: inline-block;
+                    border-radius: 10px;
+                    background-color: $colorLightPink;
+                    img{
+                        display: block;
+                    }
+                    
+
+                }
+                .greenchop-achievement-child-quantity{
+                    color: $textColor;
+                    font-size: 4.33rem;
+                    font-weight: 800;
+                    padding: 2.4rem 0;
+                }
+                .greenchop-achievement-child-content{
+                    font-size: 2rem;
+                    color: $textColor;
+                    font-weight: 400;
+                    line-height: 3.1rem;
+                    margin-top: auto;
+                }
+            }
+
+        }
+    }
+}
+.product{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 130px auto;
+    .product-title{
+        color: $textColor;
+        font-size: 3.2rem;
+        font-weight: 800;
+        line-height: 132%;
+        margin-bottom: 165px;
+    }
+    .content-product{
+        .row{
+            column-gap: 83px;
+            row-gap: 210px;
+        }
+        .col-3{
+            &:nth-of-type(2),&:nth-of-type(5){
+                .info-product{
+                    .img-product{
+                        &::before{
+                            content: "";position: absolute;
+                            display: block;
+                            width: 240px;
+                            height: 240px;
+                            border-radius: 50%;top: -40%;
+                            z-index: -1;
+                            background-color: $colorBackground;
+                        }
+                    }
+                }
+            }
+            .info-product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .img-product{
+                    position: relative;
+                    
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 240px;
+                        height: 240px;
+                        border-radius: 50%;
+                        background-color: $colorDarkPink;
+                        top: -40%;
+                        z-index: -1;
+                    }
+                    
+                    
+                }
+                
+                .info-product-title{
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                    text-shadow: 0px 3.3333332538604736px 3.3333332538604736px rgba(0, 0, 0, 0.25);
+                }
+                hr{
+                    height: 1px;
+                    width: 40px;
+                    background-color: $colorHr;
+                    border: 0;
+                    margin-bottom: 17px;
+                }
+                .quantity-product{
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: $colorTextP;
+                    line-height: 2.1rem;
+                }
+                .price-product{
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: $textColor;
+                    line-height: 2.1rem;
+                    margin-bottom: 30px;
+                    span{
+                        color: #000;
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        line-height: 2.6rem;
+                    }
+                }
+                .btn-product{
+                    padding: 1.3rem 1.2rem;
+                    border-radius: 6.67px;
+                    background-color: $primaryColor;
+                    color: #fff;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+        
+    }
+}
