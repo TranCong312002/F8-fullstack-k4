@@ -25,11 +25,7 @@
         margin-bottom: 20px;
     }
     .greenchop-introduce-title-content{
-        color: $textColor;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2rem;
+        @include styleContent;
         width: 85%;
     }
 }
@@ -41,7 +37,7 @@
     position: relative;
     .img-chop{
         width: 100%;
-        margin-left:-21%;
+        margin-left:-17%;
         height: auto;
     }
     .greenchop-introduce-image-title{
@@ -77,11 +73,8 @@
     }
     .greenchop-protect-content{
         margin-top: 25px;
-        color: $textColor;
+        @include styleContent;
         text-align: center;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 2rem;
         width: 55%;
     }
     .greenchop-achievement{
@@ -172,10 +165,7 @@
     width: 80%;
     margin: 0 auto 130px auto;
     .product-title{
-        color: $textColor;
-        font-size: 3.2rem;
-        font-weight: 800;
-        line-height: 132%;
+        @include title-element;
         margin-bottom: 165px;
     }
     .content-product{
@@ -268,5 +258,61 @@
             }
         }
         
+    }
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .news-title{
+        @include title-element;
+    }
+    .news-content{
+        @include styleContent;
+        width: 60%;
+        margin: 25px 0 29px;
+    }
+    .news-info{
+        .news-info-child{
+            .news-info-child-img{
+                border-radius: 6.667px;
+                overflow: hidden;
+                box-shadow: 0px 3.3333332538604736px 3.3333332538604736px 0px rgba(0, 0, 0, 0.25);
+                &:hover{
+                    
+                    img{
+                        transform: scale(1.5);
+                        transition: transform .5s ease;
+                    }
+                }
+                img{
+                    display: block;
+                }
+            }
+            .news-info-child-date{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 17px 0;
+                .news-info-child-date-name{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    color: $primaryColor;
+                }
+                .news-info-child-date-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                } 
+            }
+            .news-info-child-title{
+                @include styleTitle;
+                margin: 17px 0;
+            }
+            .news-info-child-content{
+                @include styleContent;
+            }
+        }
     }
 }
