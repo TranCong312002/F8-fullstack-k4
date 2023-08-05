@@ -30,8 +30,9 @@
     }
 }
 .greenchop-introduce-image{
-    width: 50vw;
+    width: calc(50vw - 20px);
     height: auto;
+    z-index: -1;
     border-radius: 16.667px 0px 0px 16.667px;
     background: $colorBackground;
     position: relative;
@@ -50,7 +51,7 @@
             transform-origin: top left;
             transform: rotateZ(90deg);
             top: 5%;
-            left: 100%;
+            left: 95%;
             color: #216000;
             opacity: 0.150000006;
         }
@@ -166,6 +167,7 @@
     margin: 0 auto 130px auto;
     .product-title{
         @include title-element;
+        line-height: 132%; 
         margin-bottom: 165px;
     }
     .content-product{
@@ -312,6 +314,154 @@
             }
             .news-info-child-content{
                 @include styleContent;
+            }
+        }
+    }
+}
+
+.more{
+    display: flex;
+    margin: 80px 0 100px;
+    justify-content: center;
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        gap: 3px;
+        border-radius: 0.66rem;
+        padding: 1.2rem 2.2rem;
+        border: 0.08rem solid $primaryColor;
+        span{
+            font-size: 2rem;
+            font-weight: 700;
+            color: $textColor;
+        }
+    }
+}
+.greenchop-chopsticks{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 120px;
+    .box{
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 360px;
+        background-color: $colorLightPink;
+        z-index: -1;
+    }
+    .greenchop-chopsticks-title{
+        @include title-element;
+    }
+    .greenchop-chopsticks-content{
+        @include styleContent;
+        margin: 25px 0 50px;
+        .greenchop-chopsticks-content-text{
+            text-align: center;
+        }
+    }
+    .greenchop-chopsticks-info{
+        .row{
+            .col-xl-4{
+                &:nth-of-type(1){
+                    .greenchop-chopsticks-info-child-nav-content{
+                        width: 85%;
+                    }
+                }
+                &:nth-of-type(3){
+                    .greenchop-chopsticks-info-child-nav-content{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+        .greenchop-chopsticks-info-child{
+            
+            height: 100%;
+            border-radius: 0.66rem;
+            overflow: hidden;
+            background-color: #fff;
+            .greenchop-chopsticks-info-child-img{
+                border-radius: 0.66rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .greenchop-chopsticks-info-child-title{
+                    @include styleTitle;
+                    color: $colorTitleChopsticks;
+            }
+            .greenchop-chopsticks-info-child-content{
+                padding:2.47rem 0 0 2.8rem ;
+            }
+        }
+    }
+}
+.greenchop-criteria{
+    margin-top: 13rem;
+    width: 90%;
+    margin: 13rem auto 13rem;
+    .row{
+        row-gap:40px;
+        .greenchop-criteria-child{
+            display: flex;
+            gap: 1.5rem;
+            .container{
+                width: 100%;
+            }
+            .greenchop-criteria-child-content{
+                display: flex;
+                flex-direction: column;
+                .greenchop-criteria-child-content-title{
+                    @include styleTitle;
+                }
+            }
+        }
+    }
+}
+.greenchop-contact{
+    margin-bottom: 70px;
+    .greenchop-contact-form{
+        .greenchop-contact-form-title{
+            @include styleTitle;
+            margin-bottom: 2.6rem;
+        }
+        input,textarea{
+            width: 100%;
+        }
+        .input-name{
+            @include styleInput;
+        }
+        .address-area{
+            display: flex;
+            gap: 10px;
+            margin: 2.3rem 0;
+            .input-email{
+                @include styleInput;
+            }
+            .input-number-phone{
+                @include styleInput;
+            }
+        }
+        .textarea{
+            @include styleInput;
+        }
+        .button-area{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2.6rem;
+            .button-send{
+                font-size: 2rem;
+                font-weight: 700;
+                width: 105px;
+                color: #fff;
+                background-color: $primaryColor;
+                padding: 1.3rem 1.2rem;
+                border-radius: 0.66rem;
             }
         }
     }
