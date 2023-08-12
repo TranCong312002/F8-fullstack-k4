@@ -25,7 +25,6 @@ var change = function (n) {
   var phu = ["nghìn", "trăm", "mươi", "linh"];
   if (n > 1000) {
     du = n % 1000;
-    console.log(du);
     name += chinh[parseInt(n / 1000) - 1] + " " + phu[0] + " ";
     if (du === 0) {
       return name;
@@ -71,7 +70,6 @@ var change = function (n) {
     }
   } else if (n > 100) {
     du = n % 100;
-    console.log(du);
     name += chinh[parseInt(n / 100) - 1] + " " + phu[1] + " ";
     if (du === 0) {
       return name;
@@ -91,7 +89,6 @@ var change = function (n) {
     }
   } else if (n > 10) {
     du = n % 10;
-    console.log(du);
     name += chinh[parseInt(n / 10) - 1] + " ";
     if (du === 0) {
       return name + phu[2];
@@ -102,4 +99,4 @@ var change = function (n) {
     return name + chinh[n - 1];
   }
 };
-console.log(change(11));
+console.log(change(2000));
