@@ -1,5 +1,5 @@
 var result = "";
-var editContent = `Lorem Ipsum is simply. dummy text of `;
+var editContent = `Lorem Ipsum is simply. dummy text of a b c d e f g `;
 var positions = editContent.indexOf(" ");
 var positionsStart = 0;
 console.log(positions);
