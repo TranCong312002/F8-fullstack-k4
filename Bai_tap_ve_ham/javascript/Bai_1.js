@@ -15,10 +15,10 @@ var fibonacci = function (n) {
 };
 var listFibonacci = function (number) {
   if (number === 1) {
-    return 1;
+    return 0;
   }
   if (number > 0) {
-    console.log(fibonacci(number));
+    console.log(fibonacci(number - 1));
   }
   return listFibonacci(number - 1);
 };
