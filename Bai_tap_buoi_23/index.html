@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dân trí</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">
+        <img
+          src="https://cdnweb.dantri.com.vn/dist/static-logo.1-0-1.742f36bc45f3443d0e59.svg"
+          alt="logo"
+        />
+      </a>
+      <div class="title">
+        <a href="https://fica.dantri.com.vn" class="fica">
+          <img
+            src="https://cdnweb.dantri.com.vn/dist/static-fica-logo.1-0-1.2435f041ebf869641575.jpg"
+            alt=""
+          />
+          <span>Fica</span>
+        </a>
+        <a href="https://dtinews.dantri.com.vn" class="DTNews">
+          <img
+            src="https://cdnweb.dantri.com.vn/dist/static-avatar-default.1-0-1.b474c6ca2d1abee5b89b.png"
+            alt=""
+          />
+          <span>Fica</span>
+        </a>
+        <div class="weather">
+          <div class="weather-place">
+            <div class="weather-place-name">TP.Hồ Chí Minh</div>
+            <div class="weather-place-date">Thứ 7, 09/09/2023</div>
+          </div>
+          <div class="weather-icon">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <div class="weather-temperature">
+            <p>25°C</p>
+          </div>
+        </div>
+        <div class="place-other">
+          <button id="login" class="login">Đăng nhập</button>
+          <label for="login">
+            <i class="fa-solid fa-user"></i>
+          </label>
+        </div>
+        <a href="#!" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </header>
+    <div class="list-info">
+      <ul>
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li><a href="#">MỚI NHẤT</a></li>
+        <li><a href="#">VIDEO</a></li>
+        <li><a href="#">XÃ HỘI</a></li>
+        <li><a href="#">THẾ GIỚI</a></li>
+        <li><a href="#">KINH DOANH</a></li>
+        <li><a href="#">BẤT ĐỘNG SẢN</a></li>
+        <li><a href="#">THỂ THAO</a></li>
+        <li><a href="#">VIỆC LÀM</a></li>
+        <li><a href="#">NHÂN ÁI</a></li>
+        <li><a href="#">SỨC KHỎE</a></li>
+        <li><a href="#">VĂN HÓA</a></li>
+        <li><a href="#">GIẢI TRÍ</a></li>
+        <li><a href="#">XE++</a></li>
+        <li><a href="#">SỨC MẠNH SỐ</a></li>
+        <li><a href="#">GIÁO DỤC</a></li>
+        <li><a href="#">AN SINH</a></li>
+        <li><a href="#">PHÁP LUẬT</a></li>
+        <li><a href="#!">. . .</a></li>
+      </ul>
+    </div>
+
+    <div class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-container">
+        <div class="modal-container-top">
+          <button class="modal-login" autofocus>Đăng nhập</button>
+          <button class="modal-register">Đăng kí</button>
+        </div>
+
+        <div class="modal-content-login">
+          <div class="social">
+            <p class="title-social">với các tài khoản mạng xã hội</p>
+            <div class="social-name">
+              <button>
+                <a href="#">
+                  <i class="fa-brands fa-google"></i>
+                  <span>google</span>
+                </a>
+              </button>
+              <button>
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>facebook</span>
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="hr"><div>hoặc</div></div>
+          <form action="#" class="form-login">
+            <label for="email"> Email </label>
+            <input type="text" id="email" placeholder="Email" />
+            <label for="password"> Mật khẩu </label>
+            <input type="password" id="password" placeholder="Mật khẩu" />
+
+            <div class="forgot">
+              <a href="#"><i>Quên mật khẩu?</i></a>
+            </div>
+            <button class="btn">Đăng nhập</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
