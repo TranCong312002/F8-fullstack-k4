@@ -54,7 +54,8 @@ function editContent(index) {
   listTodo.innerHTML = listResult.join("");
   var getNavContent = document.querySelector(".nav__info");
   var AddNavTask = document.querySelector(".nav__task");
-  AddNavTask.addEventListener("click", function () {
+  AddNavTask.addEventListener("click", function (e) {
+    e.preventDefault();
     values[index] = getNavContent.value;
     listResult[index] = `
     <div class="todo">
