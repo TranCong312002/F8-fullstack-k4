@@ -293,6 +293,9 @@ input[type=radio] {
   line-height: 22px;
   color: #333;
 }
+.modal .modal-container .modal-content-login .form-login input.no-change {
+  border: 1px solid red;
+}
 .modal .modal-container .modal-content-login .form-login #password {
   padding: 12px 44px 10px 16px;
 }
@@ -347,6 +350,9 @@ input[type=radio] {
   font-size: 14px;
   line-height: 22px;
   color: #333;
+}
+.modal .modal-container .modal-content-register .form-register input.no-change {
+  border: 1px solid red;
 }
 .modal .modal-container .modal-content-register .form-register #password {
   padding: 12px 44px 10px 16px;

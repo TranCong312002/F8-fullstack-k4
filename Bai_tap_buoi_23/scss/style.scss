@@ -264,6 +264,9 @@ input[type="radio"]{
                     font-size: 14px;
                     line-height: 22px;
                     color: #333;
+                    &.no-change{
+                    border: 1px solid red;
+                    }
                 }
                 #password{
                     padding:12px 44px 10px 16px ;
@@ -323,6 +326,9 @@ input[type="radio"]{
                     font-size: 14px;
                     line-height: 22px;
                     color: #333;
+                    &.no-change{
+                        border: 1px solid red;
+                        }
                 }
                 #password{
                     padding:12px 44px 10px 16px ;
