@@ -9,7 +9,6 @@ var value = 0;
 var valueUpdate = 0;
 var timeChange = 0;
 var currentTime = 0;
-var widthProgressBar = progressBar.offsetWidth;
 progressBar.addEventListener("mousedown", function (e) {
   e.stopPropagation();
   if (e.which === 1) {
@@ -21,13 +20,14 @@ progressBar.addEventListener("mousedown", function (e) {
     currentValue = value;
   }
 });
+//set time
 function setInfoTime(e) {
   if (e.target.closest(".progress-bar .progress span")) {
-    infoTime.style.opacity = 0;
+    infoTime.style.opacity = "0";
   } else {
+    infoTime.style.opacity = "1";
     infoTime.style.left = `${e.offsetX - 5}px`;
-    infoTime.style.opacity = 1;
-    var long = (e.offsetX / widthProgressBar) * 100;
+    var long = (e.offsetX / progressBarWidth) * 100;
     var TimeHover = (audio.duration * long) / 100;
     infoTime.innerText = `${getTime(TimeHover)}`;
   }
@@ -49,25 +49,18 @@ handleDrag = function (e) {
 dot.addEventListener("mousedown", function (e) {
   e.stopPropagation();
   initialClientX = e.clientX;
+  console.log(initialClientX);
   document.addEventListener("mousemove", handleDrag);
 });
 
 document.addEventListener("mouseup", function (e) {
   e.stopPropagation();
-  if (e.target.closest(".progress-bar")) {
-    currentValue = value;
-    timeChange = (audio.duration * value) / 100;
-    console.log(timeChange);
-    audio.currentTime = timeChange;
-    audio.addEventListener("timeupdate", timeUpdate);
-    document.removeEventListener("mousemove", handleDrag);
-  } else {
-    currentValue = value;
-    timeChange = (audio.duration * value) / 100;
-    audio.currentTime = currentTime;
-    audio.addEventListener("timeupdate", timeUpdate);
-    document.removeEventListener("mousemove", handleDrag);
-  }
+  currentValue = value;
+  timeChange = (audio.duration * value) / 100;
+  console.log(timeChange);
+  audio.currentTime = timeChange;
+  audio.addEventListener("timeupdate", timeUpdate);
+  document.removeEventListener("mousemove", handleDrag);
 });
 
 //Nhận giá trị khi kéo, khi bấm chuột xuống
@@ -110,8 +103,8 @@ function timeUpdate(e) {
   currentTime = audio.currentTime;
   timeChange = currentTime;
   console.log(currentTime);
-  valueUpdate = (audio.currentTime * 100) / audio.duration;
-  progress.style.width = `${valueUpdate}%`;
+  value = (audio.currentTime * 100) / audio.duration;
+  progress.style.width = `${value}%`;
 }
 audio.addEventListener("timeupdate", timeUpdate);
 
