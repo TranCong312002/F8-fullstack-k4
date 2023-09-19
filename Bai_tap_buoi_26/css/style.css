@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  height: 10px;
+  background: gray;
+  position: relative;
+  padding: 0 5px;
+}
+.progress-bar .info-time {
+  display: none;
+}
+.progress-bar:hover .info-time {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: -22px;
+  display: inline;
+}
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: red;
+}
+
+.progress-bar .progress span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  right: 0;
+  background-color: blueviolet;
+  translate: 50% -50%;
+  border-radius: 50%;
+}
+
+.container .play-btn {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.container .play-btn i {
+  cursor: pointer;
+  font-size: 50px;
+}
+.playinner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.playinner .progress-bar {
+  width: 100%;
+}
