@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">DANH SÁCH SẢN PHẨM</h1>
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        width="100%"
+        border="1px"
+        class="list-item"
+      >
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Thêm vào giỏ hàng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Sản phẩm 1</td>
+            <td>1000</td>
+            <td>
+              <input type="number" value="1" id="item-1" class="item-1" />
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Sản phẩm 2</td>
+            <td>2000</td>
+            <td>
+              <input type="number" value="1" id="item-2" class="item-2" />
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td>Sản phẩm 3</td>
+            <td>3000</td>
+            <td>
+              <input type="number" value="1" id="item-3" class="item-3" />
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>4</td>
+            <td>Sản phẩm 4</td>
+            <td>4000</td>
+            <td>
+              <input type="number" value="1" id="item-4" class="item-4" />
+              <button class="btn">Thêm vào giỏ hàng</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h1 class="title">GIỎ HÀNG</h1>
+      <div class="view-cart">
+        <p class="para">Giỏ hàng không có sản phẩm</p>
+        <div class="cart">
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            border="1px"
+            class="list-item-cart"
+          >
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Xóa</th>
+              </tr>
+            </thead>
+
+            <tbody class="list-item-in-cart"></tbody>
+            <tfoot class="total"></tfoot>
+          </table>
+          <hr />
+          <div class="bottom-cart">
+            <button class="update-cart">Cập nhật giỏ hàng</button>
+            <button class="Delete-cart">Xóa giỏ hàng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

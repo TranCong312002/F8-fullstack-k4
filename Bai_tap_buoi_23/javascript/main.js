@@ -7,6 +7,8 @@ var modalContentLogin = document.querySelector(".modal-content-login");
 var modalContentRegister = document.querySelector(".modal-content-register");
 var formRegister = document.querySelector(".form-register");
 var inputChange = document.querySelectorAll("input");
+var emailLogin = document.querySelector("#email-login");
+console.log(emailLogin);
 login.addEventListener("click", function () {
   if (!modal.classList.contains("js-modal")) {
     modal.classList.add("js-modal");
@@ -31,7 +33,12 @@ modalRegister.addEventListener("click", function () {
   modalContentRegister.classList.remove("hidden");
   modalLogin.classList.remove("active");
 });
-var number = 0;
-for (var value of inputChange) {
-  console.log(value);
+// var number = 0;
+for (let value of inputChange) {
+  let prevValue = value.value;
+  value.addEventListener("change", function (e) {
+    var number = 0;
+
+    console.log(number);
+  });
 }
