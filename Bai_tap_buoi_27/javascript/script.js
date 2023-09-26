@@ -25,6 +25,8 @@ var cart = document.querySelector(".cart");
 var root = document.querySelector("#root");
 var para = document.querySelector(".para");
 var total = document.querySelector(".total");
+var updateCart = document.querySelector(".update-cart");
+
 var listItemCart = document.querySelector(".list-item-cart");
 var listItemInCart = document.querySelector(".list-item-in-cart");
 var totalPrice = 0;
@@ -50,7 +52,7 @@ for (let i = 0; i < btn.length; i++) {
 
       tr[i] = `
       <tr>
-        <td>${stt}</td>
+        <td>${i + 1}</td>
         <td>${customers[i]["nameItem"]}</td>
         <td>${customers[i]["price"]}</td>
         <td>
@@ -64,7 +66,7 @@ for (let i = 0; i < btn.length; i++) {
 
       tr[i] = `
       <tr>
-        <td>${stt}</td>
+        <td>${i + 1}</td>
         <td>${customers[i]["nameItem"]}</td>
         <td>${customers[i]["price"]}</td>
         <td>
@@ -73,13 +75,12 @@ for (let i = 0; i < btn.length; i++) {
         <td>${prices[i]}</td>
         <td><button class="delete-btn">Xóa</button></td>
       </tr>`;
-      console.log(quantityItem[i]);
-      console.log(prices[i]);
+
       getID.push(customers[i]["id"]);
-      stt++;
     }
     listItemInCart.innerHTML = tr.join(" ");
-    console.log(tr);
+
+    // console.log(tr);
     total.innerHTML = `<tr>
     <td colspan="3">Tổng</td>
     <td>${count}</td>
@@ -90,3 +91,9 @@ for (let i = 0; i < btn.length; i++) {
     count = 0;
   });
 }
+updateCart.addEventListener("click", function () {
+  for (let i = 0; i < prices.length; i++) {
+    console.log(quantityItem[i]);
+  }
+  listItemInCart.innerHTML = tr.join(" ");
+});

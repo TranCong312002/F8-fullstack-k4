@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karaoke</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="player">
+        <div class="play-btn">
+          <i class="bx bx-play"></i>
+        </div>
+        <div class="playinner">
+          <span>00:00</span>
+          <div class="progress-bar">
+            <div class="info-time"></div>
+            <div class="progress">
+              <span></span>
+            </div>
+          </div>
+          <span>00:00</span>
+        </div>
+      </div>
+      <button class="btn">Hát Karaoke</button>
+    </div>
+    <div class="karaoke-show">
+      <div class="karaoke-show-top">
+        <h1 class="karaoke-show-title">Karaoke</h1>
+        <span class="close-tab">
+          <i class="bx bxs-chevron-down down"></i>
+        </span>
+      </div>
+      <div class="karaoke-content">
+        <p class="karaoke-content-lyric"></p>
+        <!-- <p class="karaoke-content-top"></p>
+        <p class="karaoke-content-bottom"></p> -->
+      </div>
+    </div>
+    <!-- <audio src="mp3/Thanhxuan.mp3" class="audio"></audio> -->
+    <audio src="mp3/yeuvoivang.mp3" class="audio"></audio>
+    <script src="javascript/lyric.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
