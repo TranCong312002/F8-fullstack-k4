@@ -1,0 +1,18 @@
+.list {
+  padding: 20px;
+  background-color: #4286f4;
+  width: 500px;
+  margin: 0 auto;
+}
+.list .list-items {
+  background-color: #8bb3f4;
+  border: 1px solid #fff;
+  margin: 1px 0;
+  padding: 8px;
+}
+.list .list-items.module {
+  background-color: #ff6f00;
+}
+.list-items.drag {
+  opacity: 0.4;
+}
