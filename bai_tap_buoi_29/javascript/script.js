@@ -27,32 +27,16 @@ function render(element) {
 
 render(list);
 listItems.forEach(function (value, index) {
-  function render(element) {
-    var span = list.querySelectorAll("span");
-    var childArr = Array.from(element.children);
-    childArr.forEach(function (item, index) {
-      item.draggable = true;
-      let title = "Bài";
-      if (item.classList.contains("module")) {
-        title = "Module";
-        STTModule++;
-      } else {
-        STTItem++;
-      }
-      item.innerHTML = `${title} ${
-        title === "Module" ? STTModule : STTItem
-      } : <span>${span.innerText}</span>`;
-    });
-  }
-
   function handleDragEnd(e) {
     //  NewListItems = document.querySelectorAll(".list .list-items");
     list = document.querySelector(".list");
     listItems = document.querySelectorAll(".list .list-items");
-
+    STTItem = 0;
+    STTModule = 0;
     value.classList.remove("drag");
-    value.removeEventListener("dragover", handleDrag);
+    // value.removeEventListener("dragover", handleDrag);
     value.removeEventListener("dragend", handleDragEnd);
+    // render(list);
     return "ok";
   }
   function handleDrag(e) {
