@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Doc Editor</h1>
+      <!-- end title -->
+      <hr />
+      <div class="controls">
+        <div class="main-controls">
+          <div class="drop-down">
+            <button class="controls-file">
+              File
+              <i class="bx bx-caret-down"></i>
+            </button>
+            <div class="list-controls-file hidden">
+              <button class="item btn-new">New file</button>
+              <button class="item btn-txt">Save as TXT</button>
+              <button class="item btn-pdf">Save as PDF</button>
+            </div>
+          </div>
+          <input type="text" id="name-file" value="untitled" />
+        </div>
+        <!--end main-controls-->
+        <div class="nav-controls">
+          <button class="text-bold">b</button>
+          <button class="text-underline">u</button>
+          <button class="text-italic">i</button>
+          <input type="color" class="text-color" />
+        </div>
+        <!--end nav-controls-->
+      </div>
+      <!-- end controls -->
+      <div id="content" contenteditable="true" spellcheck="false">
+        cong dz quá trời ơi
+      </div>
+      <!-- end content -->
+      <div class="info-content"></div>
+    </div>
+    <!-- end container -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

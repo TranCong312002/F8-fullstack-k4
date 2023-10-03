@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 100%;
+}
+.container {
+  padding: 10px 100px;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 6px;
+}
+.controls .main-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  height: 100%;
+  width: 30%;
+}
+.controls .main-controls .drop-down {
+  height: 100%;
+  position: relative;
+}
+.controls .main-controls .drop-down .list-controls-file {
+  position: absolute;
+  min-width: 170px;
+  top: 105%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 5px 0;
+  background-color: #fff;
+}
+.controls .main-controls .drop-down .list-controls-file.hidden {
+  display: none;
+}
+.controls .main-controls .drop-down .list-controls-file .item {
+  border: none;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+}
+.controls .main-controls .drop-down .list-controls-file .item:hover {
+  background-color: #cccccc54;
+}
+.controls .main-controls .controls-file {
+  height: 100%;
+  padding: 0 15px;
+  background-color: rgb(0, 76, 255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.controls .main-controls .controls-file:hover {
+  background-color: rgb(5, 52, 162);
+}
+.controls .main-controls #name-file {
+  flex: 1;
+  padding-left: 3px;
+}
+.controls .nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+.controls .nav-controls button {
+  height: 100%;
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+.controls .nav-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.679);
+}
+.controls .nav-controls .text-bold {
+  font-weight: 900;
+}
+.controls .nav-controls .text-underline {
+  text-decoration: underline;
+}
+.controls .nav-controls .text-italic {
+  font-style: italic;
+}
+.controls .nav-controls .text-color {
+  height: 100%;
+  width: 40px;
+  size: 20px;
+}
+#content {
+  min-height: 300px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+  padding: 15px;
+}
