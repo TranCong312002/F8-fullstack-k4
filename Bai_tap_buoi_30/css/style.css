@@ -9,6 +9,9 @@ img {
 .container {
   padding: 10px 100px;
 }
+.container .info-content {
+  text-align: right;
+}
 .controls {
   display: flex;
   align-items: center;
