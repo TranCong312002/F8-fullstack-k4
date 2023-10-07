@@ -27,29 +27,36 @@ function render(element) {
 
 render(list);
 listItems.forEach(function (value, index) {
-  function handleDragEnd(e) {
-    //  NewListItems = document.querySelectorAll(".list .list-items");
-    list = document.querySelector(".list");
-    listItems = document.querySelectorAll(".list .list-items");
-    STTItem = 0;
-    STTModule = 0;
-    value.classList.remove("drag");
-    // value.removeEventListener("dragover", handleDrag);
-    value.removeEventListener("dragend", handleDragEnd);
-    // render(list);
-    return "ok";
-  }
-  function handleDrag(e) {
-    e.preventDefault();
-    var next = e.clientY;
-    if (placeNow - e.clientY >= heightItem / 2) {
-      var step = Math.round((placeNow - next) / heightItem);
-      list.insertBefore(targetItem, listItems[space - step]);
-    } else {
-      var step = Math.round((next - placeNow) / heightItem);
-      list.insertBefore(targetItem, listItems[space + step]);
+  function sortable(rootElement, renderView) {
+    function handleDragEnd(e) {
+      //  NewListItems = document.querySelectorAll(".list .list-items");
+      list = document.querySelector(".list");
+      listItems = document.querySelectorAll(".list .list-items");
+      STTItem = 0;
+      STTModule = 0;
+      value.classList.remove("drag");
+      // value.removeEventListener("dragover", handleDrag);
+      value.removeEventListener("dragend", handleDragEnd);
+      // render(list);
+      return "ok";
+    }
+    function handleDrag(e) {
+      e.preventDefault();
+      var next = e.clientY;
+      if (placeNow - e.clientY >= heightItem / 2) {
+        var step = Math.round((placeNow - next) / heightItem);
+        list.insertBefore(targetItem, listItems[space - step]);
+      } else {
+        var step = Math.round((next - placeNow) / heightItem);
+        list.insertBefore(targetItem, listItems[space + step]);
+      }
     }
   }
+  sortable(listItems, function () {
+    STTItem = 0;
+    STTModule = 0;
+    render(list);
+  });
   heightItem = value.offsetHeight;
 
   value.addEventListener("dragstart", function (e) {

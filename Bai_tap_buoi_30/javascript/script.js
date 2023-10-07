@@ -1,5 +1,4 @@
-// // Thêm thẻ a vào DOM
-// document.body.appendChild(downloadLink);
+"use strict";
 var controlsFile = document.querySelector(".drop-down .controls-file");
 var listControlsFile = document.querySelector(".drop-down .list-controls-file");
 var boldBtn = document.querySelector(".text-bold");

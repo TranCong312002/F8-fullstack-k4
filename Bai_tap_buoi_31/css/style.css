@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  color: #fff;
+}
+
+.timer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #03bdf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.timer h2 {
+  text-transform: uppercase;
+  /* color: #fff; */
+  font-size: 36px;
+}
+.timer .counter {
+  margin: 30px auto;
+  font-size: 30px;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: #ff9100;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  /* color: #fff; */
+  align-items: center;
+}
+.timer .btn {
+  padding: 10px 25px;
+  border-radius: 99px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+.timer .btn:disabled {
+  background-color: #b6b6b6;
+  color: gray;
+  cursor: not-allowed;
+}
