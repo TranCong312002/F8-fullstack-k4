@@ -16,7 +16,7 @@ class F8 {
           let html = Obj.template;
           templateEl.innerHTML = html;
           const templateNode = templateEl.content.cloneNode(true);
-
+          console.log(templateNode);
           const results = html.match(/{{.+?}}/g);
 
           if (results) {
@@ -34,11 +34,11 @@ class F8 {
                 html = html.replace(result, title);
               }
             });
+            templateNode.innerHTML = html;
           }
           templateNode.innerHTML = html;
-          console.log(templateNode);
-          console.log(this);
           this.append(templateNode);
+          //   this.append(templateNode);
         }
       }
     );
