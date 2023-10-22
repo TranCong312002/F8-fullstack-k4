@@ -44,12 +44,8 @@ const app = {
       loading = false;
       if (!loading) {
         listContent.removeChild(loadingPlace);
-        console.log(queryString);
-        console.log(post);
-        console.log(post.length);
         if (post.length === 0) {
           check = true;
-          console.log("vô đây");
         }
         this.render(post);
       }
@@ -62,8 +58,6 @@ const app = {
 window.addEventListener("scroll", () => {
   let maxScrollY =
     window.document.documentElement.scrollHeight - window.innerHeight;
-  console.log(maxScrollY);
-  console.log(window.scrollY);
   if (loading === false) {
     if (check === false) {
       if (window.scrollY >= maxScrollY * 0.95) {
