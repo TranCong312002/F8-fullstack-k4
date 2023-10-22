@@ -11,3 +11,7 @@
   padding: 5px 10px 20px;
   margin-bottom: 20px;
 }
+.list-content .loading {
+  text-align: center;
+  margin-bottom: 10px;
+}

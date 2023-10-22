@@ -1,6 +1,7 @@
 import { client } from "./client.js";
 import { config } from "./config.js";
 const { Page_limit } = config;
+const listContent = document.querySelector(".list-content");
 let pageNumber = 1;
 let loading = false;
 const app = {
@@ -30,14 +31,23 @@ const app = {
   `;
   },
   getPost: async function (query = {}) {
+    const loadingPlace = document.createElement("div");
+    loadingPlace.className = "loading";
+    loadingPlace.innerText = "Loading...";
     let queryString = new URLSearchParams(query).toString();
     queryString = queryString ? "?" + queryString : "";
     loading = true;
-    const { data: post } = await client.get(`/post${queryString}`);
-    loading = false;
-    console.log(queryString);
-    console.log(post);
-    this.render(post);
+    if (loading) {
+      listContent.append(loadingPlace);
+      const { data: post } = await client.get(`/post${queryString}`);
+      loading = false;
+      if (!loading) {
+        listContent.removeChild(loadingPlace);
+        console.log(queryString);
+        console.log(post);
+        this.render(post);
+      }
+    }
   },
   start: function () {
     this.getPost(this.query);
