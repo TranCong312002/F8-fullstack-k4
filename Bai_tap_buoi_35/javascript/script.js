@@ -4,6 +4,7 @@ const { Page_limit } = config;
 const listContent = document.querySelector(".list-content");
 let pageNumber = 1;
 let loading = false;
+let check = false;
 const app = {
   rootEl: document.querySelector(".list-content"),
   query: {
@@ -45,6 +46,11 @@ const app = {
         listContent.removeChild(loadingPlace);
         console.log(queryString);
         console.log(post);
+        console.log(post.length);
+        if (post.length === 0) {
+          check = true;
+          console.log("vô đây");
+        }
         this.render(post);
       }
     }
@@ -59,10 +65,12 @@ window.addEventListener("scroll", () => {
   console.log(maxScrollY);
   console.log(window.scrollY);
   if (loading === false) {
-    if (window.scrollY >= maxScrollY * 0.95) {
-      pageNumber++;
-      app.query._page = pageNumber;
-      app.start();
+    if (check === false) {
+      if (window.scrollY >= maxScrollY * 0.95) {
+        pageNumber++;
+        app.query._page = pageNumber;
+        app.start();
+      }
     }
   }
 });
