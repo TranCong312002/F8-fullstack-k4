@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smatyx todos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title"><span>Smatyx</span> todos App</h1>
+      <form action="" class="form-todos">
+        <div class="form-search">
+          <input type="text" class="ip-search" placeholder="Search Todos" />
+          <button class="btn-search"><i class="bx bx-search-alt-2"></i></button>
+        </div>
+        <button class="btn-add">Add Todos</button>
+      </form>
+      <div class="place-todos">
+        <div class="todo">
+          <span class="content">abcxyz</span>
+          <div class="action">
+            <button class="nav-action delete">
+              <i class="bx bx-trash"></i>
+            </button>
+            <button class="nav-action change">
+              <i class="bx bx-edit"></i>
+            </button>
+            <button class="nav-action complated">
+              <i class="bx bx-save"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="table-add-todo hidden">
+      <div class="top">
+        <input type="text" placeholder="Add Todos" />
+      </div>
+      <hr />
+      <div class="bottom">
+        <button class="bottom-btn add-save">Save</button>
+        <button class="bottom-btn add-cancel">Cancel</button>
+      </div>
+    </div>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

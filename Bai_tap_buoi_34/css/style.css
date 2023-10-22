@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  max-width: 600px;
+  margin-top: 100px;
+  margin: 0 auto;
+}
+.container .title {
+  text-align: center;
+  margin: 100px auto 30px auto;
+}
+.container .title span {
+  /* background: rgb(63, 206, 251); */
+  background: linear-gradient(
+    90deg,
+    rgba(63, 206, 251, 1) 24%,
+    rgba(57, 228, 44, 1) 80%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.form-todos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+.form-todos .btn-add {
+  height: auto;
+  border: none;
+  border-radius: 5px;
+  padding: 16px;
+  background-color: #047857;
+  color: #fff;
+}
+.form-todos .form-search {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.form-todos .form-search .ip-search {
+  width: 100%;
+  height: 80%;
+  padding: 5px 45px 5px 21px;
+  padding-right: 45px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form-todos .form-search .btn-search {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d4ed8;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.place-todos {
+  width: 100%;
+}
+.place-todos .todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px #0c0606;
+  border-radius: 5px;
+  padding: 16px;
+  margin-top: 10px;
+}
+.place-todos .todo .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.place-todos .todo .action .nav-action {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.place-todos .todo .action .nav-action.delete {
+  background-color: #be123c;
+}
+.place-todos .todo .action .nav-action.change {
+  background-color: #1d4ed8;
+}
+
+.place-todos .todo .action .nav-action.complated {
+  background-color: #9ca3af;
+}
+.overlay.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #ccc;
+  visibility: visible;
+  opacity: 0.9;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  z-index: 1;
+}
+.table-add-todo {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  min-width: 400px;
+  border-radius: 5px;
+  visibility: visible;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  opacity: 1;
+}
+.table-add-todo.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.table-add-todo .top {
+  padding: 16px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-add-todo .top input {
+  width: 100%;
+  padding: 16px;
+  background-color: #f9fafb;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.table-add-todo .bottom {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.table-add-todo .bottom .bottom-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+.table-add-todo .bottom .bottom-btn:hover {
+  opacity: 0.8;
+}
+.table-add-todo .bottom .bottom-btn.add-save {
+  background-color: #047857;
+  color: #fff;
+}
