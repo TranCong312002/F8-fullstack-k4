@@ -1,0 +1,212 @@
+/* https://i.pinimg.com/564x/a0/33/a6/a033a6d215cfdc41dbfd92c5ac5dc8cf.jpg */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}
+.app .quizGame {
+  width: 100%;
+  height: 100%;
+}
+.app .quizGame .quiz-start {
+  background-image: url("https://i.pinimg.com/564x/a0/33/a6/a033a6d215cfdc41dbfd92c5ac5dc8cf.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.quiz-start.hidden {
+  display: none;
+}
+.app .quizGame .quiz-start .place-quiz-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.app .quizGame .quiz-start .place-quiz-start .btn-start {
+  padding: 20px 30px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 48px;
+  cursor: pointer;
+}
+.app .quizGame .quiz-start .place-quiz-start .start-time {
+  font-size: 48px;
+  color: #fff;
+  background-color: #000;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.app .quizGame .quiz-start .place-quiz-start .start-time.hidden {
+  display: none;
+}
+.app .quizGame .quiz-questions {
+  height: 100%;
+  width: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.app .quizGame .quiz-questions.hidden {
+  display: none;
+}
+.app .quizGame .quiz-questions .quiz-questions-time {
+  height: 3px;
+  width: 100%;
+  padding: 0 5px;
+}
+.app .quizGame .quiz-questions .quiz-questions-time .time-move {
+  background-color: #ccc;
+  height: 100%;
+  margin-bottom: 3px;
+}
+.app .quizGame .quiz-questions .place-quiz-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 5px;
+}
+.app .quizGame .quiz-questions .place-quiz-questions .quiz-questions-top {
+  display: flex;
+  justify-content: space-between;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-top
+  .score {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-top
+  .info-number-questions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-top
+  .info-number-questions
+  .number-question {
+  background-color: #262626;
+  padding: 15px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 10px;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-top
+  .info-number-questions
+  .streak-question {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.app .quizGame .quiz-questions .place-quiz-questions .quiz-questions-content {
+  background-image: url("https://i.pinimg.com/564x/a0/33/a6/a033a6d215cfdc41dbfd92c5ac5dc8cf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-content
+  .question {
+  height: 100%;
+  padding: 8px 5px 5px;
+  color: #fff;
+  background-color: #00000070;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-content
+  .answer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  gap: 15px;
+  font-size: 25px;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-content
+  .answer
+  .answer-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000078;
+  width: 100%;
+  border-radius: 16px;
+}
+.app
+  .quizGame
+  .quiz-questions
+  .place-quiz-questions
+  .quiz-questions-content
+  .answer
+  .answer-item:hover {
+  background-color: rgb(7, 189, 255);
+}
+.app .quizGame .quiz-questions .place-quiz-questions .quiz-questions-bottom {
+  height: calc(100vh - 80vh - 40px - 15px);
+  background-color: green;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

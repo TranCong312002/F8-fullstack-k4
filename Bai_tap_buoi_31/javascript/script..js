@@ -14,6 +14,7 @@ function animation(time) {
   } else {
     btn.disabled = true;
     if (time - startTime >= interval) {
+      console.log(time);
       number--;
       counter.innerHTML = number;
 
