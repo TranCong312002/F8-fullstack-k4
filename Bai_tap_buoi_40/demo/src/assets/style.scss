@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+height: 100vh;
+display: block;
+margin: 0 auto;
+}
+#app{
+    header{
+        margin-bottom: 10px;
+    }
+    padding:0 50px;
+    .main-app{
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        padding: 10px 0;
+        .list-menu{
+            
+            h2{
+                color: rgb(0, 195, 255);
+
+            }
+            ul{
+                text-decoration:none ;
+                list-style-type: none;
+                li{
+                    padding: 5px 0 5px 5px;
+                    
+                }
+            }
+        }
+        .show-product{
+            flex: 1;
+            text-align: center;
+        }
+}
+}
