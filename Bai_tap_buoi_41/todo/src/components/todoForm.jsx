@@ -5,8 +5,11 @@ function TodoForm({ getDataList }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const dataApiKey = JSON.parse(localStorage.getItem("dataApi"));
+    console.log(dataApiKey);
     client.setApiKey(dataApiKey);
     const { response, data } = await client.post("/todos", { todo: content });
+    console.log(response);
+    console.log(data);
     setContent("");
     if (response.ok) {
       getDataList();

@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button:hover{
+    background-color: #15803D;
+}
+.shop{
+    background-color: #334155;
+    padding: 15px;
+    .title{
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+
+    }
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        .product{
+            width: calc(20% - 20px);
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+            .name-product{
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .place-buy{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                margin-top: auto;
+                .cost-product{
+                    color: #d62828;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                .add-cart{
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    background-color: #22C55E;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    &:hover{
+                        background-color: #15803D;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .cart{
+        margin-top: 25px;
+        
+        .product-cart{
+            background-color: #fff;
+            width: 100%;
+            border-top-left-radius:10px ;
+            border-top-right-radius:10px ;
+            overflow: hidden;
+            .title-cart{
+                background-color: #F9FAFB;
+                font-size: 20px;
+                color: #160e0e;
+                
+                tr{
+                    
+                    th{
+                        padding: 10px;
+                        text-align: left;
+                        margin: 0; 
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
+            .body-cart{
+                tr{
+                    td{
+                        padding: 10px;
+                        text-align: left;
+                        &:nth-of-type(1){
+                            font-weight: 900;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .pay-cart{
+            padding: 10px 10px;
+            border-radius: 10px;
+            width: 150px;
+            height: 50px;
+            background-color: #22C55E;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            border: none;
+            &:hover{
+                background-color: #15803D;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.form-login{
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 30%;
+    left: 50%;
+    translate: -50%;
+    min-width: 400px;
+    min-height: 100px;
+    padding: 10px 10px 40px;
+    .title-login{
+        padding: 10px 0 20px;
+        font-weight: 800;
+        font-size: 20px;
+        text-align: center;
+    }
+    .email-login{
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        padding-left: 5px;
+    }
+    .btn-login{
+        margin-top: 10px;
+        background-color: #047857;
+        padding: 10px 20px;
+        color: #fff;
+        width: 100%;
+        outline: none;
+        border: none;
+        &:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: #ccc;
+    visibility: visible;
+    opacity: 0.9;
+    transition-property: opacity, visibility;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    z-index: 1;
+  }
