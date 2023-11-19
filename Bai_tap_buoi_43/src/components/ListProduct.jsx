@@ -4,6 +4,7 @@ import { client } from "../config/client";
 function ListProduct() {
   const [listProduct, setListProduct] = useState([]);
   const [listCart, setListCart] = useState([]);
+  const [quantity, setQuantity] = useState(0);
   useEffect(() => {
     const getProduct = async () => {
       const { data } = await client.get("/products");
@@ -22,11 +23,8 @@ function ListProduct() {
     });
     console.log(item);
     setListCart([...listCart, { productId: item._id, quantity: 1 }]);
-
-    const { response, data } = await client.post("/orders", listCart);
     console.log(listCart);
-    console.log(response);
-    console.log(data);
+    const { response, data } = await client.post("/orders", listCart);
   };
   return (
     <div>
