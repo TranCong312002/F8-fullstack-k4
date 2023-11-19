@@ -13,12 +13,16 @@ function Shop() {
       setIsLogin(true);
     }
   }, []);
+  const [render, setRender] = useState(false);
+  const handlerRender = () => {
+    setRender(!render);
+  };
   return (
     <div>
       {isLogin ? (
         <>
-          <ListProduct />
-          <Cart />
+          <ListProduct onRender={handlerRender} />
+          <Cart render={render} />
         </>
       ) : (
         <FormLogin onGetData={handleGetData} />

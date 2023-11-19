@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-function Cart() {
-  return (
+function Cart({ render }) {
+  const data = JSON.parse(localStorage.getItem("listCart"));
+  const [value, setValue] = useState(data);
+  useEffect(() => {
+    setValue(data);
+  }, [render]);
+  return value ? (
     <div>
       <div className="cart">
         <table className="product-cart" cellSpacing={0}>
@@ -14,17 +19,25 @@ function Cart() {
             </tr>
           </thead>
           <tbody className="body-cart">
-            <tr>
-              <td>Phụ kiện công nghệ Maybelline</td>
-              <td>1</td>
-              <td>12345</td>
-              <td>43221</td>
-            </tr>
+            {value.map(
+              ({ name, totalPrice, productId, quantity, resQuantity }) => {
+                return (
+                  <tr key={productId}>
+                    <td>{name}</td>
+                    <td>{quantity}</td>
+                    <td>{resQuantity}</td>
+                    <td>{totalPrice}</td>
+                  </tr>
+                );
+              }
+            )}
           </tbody>
         </table>
         <button className="pay-cart">Thanh toán</button>
       </div>
     </div>
+  ) : (
+    <div>Chưa có hàng</div>
   );
 }
 
