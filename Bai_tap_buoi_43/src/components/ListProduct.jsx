@@ -25,18 +25,14 @@ function ListProduct({ onRender }) {
     console.log(item);
     let listClone = [...listCart];
     console.log(listClone);
-    let found = false;
-    listClone.some(({ productId, quantity }) => {
+    const check = listClone.some(({ productId }) => {
       if (e.target.id === productId) {
-        console.log("vô đây rồi");
-        console.log(quantity);
-        quantity++;
-        found = true;
         return true;
       }
       return false;
     });
-    if (!found) {
+    console.log(check);
+    if (!check) {
       listClone = [
         ...listCart,
         {
@@ -47,7 +43,10 @@ function ListProduct({ onRender }) {
           resQuantity: item.quantity,
         },
       ];
+    } else {
+      listClone = [...listClone];
     }
+
     console.log(listClone);
     localStorage.setItem("listCart", JSON.stringify(listClone));
     setListCart(listClone);

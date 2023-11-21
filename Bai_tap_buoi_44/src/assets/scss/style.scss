@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    button{
+        cursor: pointer;
+        &:hover{
+            opacity: 0.9;
+        }
+
+    }
+}
+.container-login{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .form-login{
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+        .content-title{
+            margin-bottom: 20px;
+        }
+        .content{
+            margin-bottom: 20px;
+        }
+        .place-login{
+            button{
+                padding: 10px 20px;
+                
+                background-color: #FF5722;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(178, 60, 23);
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px;
+                }
+            }
+        }
+    }
+}
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .form{
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+       min-width: 420px;
+        .main-form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            padding: 30px;
+            gap: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            .place-info{
+                .img-info{
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                }
+                .title-info{
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .location-info{
+                    text-align: center;
+                    font-size: 16px;
+                    color: #727171;
+                    margin-bottom: 8px;
+                }
+                .email-info{
+                    margin-bottom: 8px;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+            .account{
+                padding: 16px 14px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            #helps{
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                padding: 16px 14px;
+                font-size: 16px;
+
+            }
+            .request{
+                padding: 10px;
+                background: #4CAF50;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        
+    }
+    .nav-form{
+        button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #FF5722;
+            border: none;
+        }
+    }
+}
