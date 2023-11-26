@@ -15,7 +15,7 @@ function FormMail() {
     console.log("vô đây rồi");
     emailjs
       .sendForm(
-        "service_tdnsosf",
+        "service_fqqu82o",
         "template_ez6c2yk",
         form.current,
         "6vxEG4sDrhwn7kKtV"
@@ -41,7 +41,7 @@ function FormMail() {
               className="account"
               name="account"
               placeholder="Nhập email vô đây..."
-              value={user.email}
+              // value={user.email}
             />
             <textarea
               name="helps"
